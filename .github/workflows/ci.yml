@@ -30,6 +30,8 @@ jobs:
 
       - name: Build Project
         run: npm run build
+        env:
+          CI: false
 
   docker-build:
     runs-on: ubuntu-latest
